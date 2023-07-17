@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout</h1>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <form id="checkout-form" action="checkout.php" method="POST">
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
+      </div>
+      <div class="form-group">
+        <label for="currency">Currency</label>
+        <input type="text" id="currency" name="currency" placeholder="Enter currency" required>
+      </div>
+      <!-- Add other form fields as needed -->
+      <div class="buttons">
+        <button type="submit" class="btn btn-primary">Checkout</button>
+        <button type="button" class="btn btn-secondary">Review your order</button>
+        <a href="#" class="btn btn-link">Contact us</a>
+      </div>
+    </form>
+    <div class="info-section">
+      <h2>Payment Methods</h2>
+      <p>We accept various payment methods, including credit cards, debit cards, and online wallets. Choose the one that suits you best.</p>
+      <h2>Customer Rights</h2>
+      <p>As a valued customer, you have the right to a secure and reliable payment process. Your personal information will be handled with utmost confidentiality.</p>
+      <h2>Contact Information</h2>
+      <p>If you have any questions or need assistance, please feel free to contact our customer support team at support@example.com or call us at +1234567890.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
